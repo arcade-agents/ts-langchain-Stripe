@@ -14,7 +14,7 @@ import {
 import readline from "node:readline/promises";
 
 // This determines which tools require human in the loop approval to run
-const TOOLS_WITH_APPROVAL = ['Stripe_CreateBillingPortalSession', 'Stripe_CreateInvoice', 'Stripe_CreateInvoiceItem', 'Stripe_CreatePaymentLink', 'Stripe_CreateRefund', 'Stripe_FinalizeInvoice'];
+const TOOLS_WITH_APPROVAL = ['Stripe_CreateBillingPortalSession', 'Stripe_CreateCustomer', 'Stripe_CreateInvoice', 'Stripe_CreateInvoiceItem', 'Stripe_CreatePaymentLink', 'Stripe_CreatePrice', 'Stripe_CreateProduct', 'Stripe_CreateRefund', 'Stripe_FinalizeInvoice'];
 
 // Prompt user for yes/no confirmation
 export async function confirm(question: string, rl?: readline.Interface): Promise<boolean> {
